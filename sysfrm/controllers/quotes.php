@@ -394,6 +394,7 @@ minHeight: 300 // pixels
             $d->postcode = '';
             $d->country = '';
             $d->phonenumber = '';
+            $d->currency = 0;
             $d->subtotal = $sTotal;
             $d->discount_type = $discount_type;
             $d->discount_value = $discount_value;

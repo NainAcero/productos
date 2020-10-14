@@ -291,7 +291,7 @@ License: You must have a valid license purchased only from envato(the above link
             <div class="text-right">
 
                  <br>
-                {* <a href="{$_url}client/ipdf/{$d['id']}/token_{$d['vtoken']}" class="btn btn-primary ml-sm"><i class="fa fa-print"></i> {$_L['Download PDF']}</a> *}
+                <a href="{$_url}client/ipdf/{$d['id']}/token_{$d['vtoken']}" class="btn btn-primary ml-sm"><i class="fa fa-print"></i> {$_L['Download PDF']}</a>
                 <a href="{$_url}iview/print/{$d['id']}/token_{$d['vtoken']}" target="_blank" class="btn btn-primary ml-sm"><i class="fa fa-print"></i> {$_L['Printable Version']}</a>
             </div>
         </div>

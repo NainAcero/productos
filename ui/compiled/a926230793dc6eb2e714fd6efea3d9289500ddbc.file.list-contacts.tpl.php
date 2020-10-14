@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 12:17:40
+<?php /* Smarty version Smarty-3.1.13, created on 2016-07-26 20:24:45
          compiled from "ui\theme\softhash\list-contacts.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:255925797ff4d0afd69-21141704%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a926230793dc6eb2e714fd6efea3d9289500ddbc' => 
     array (
       0 => 'ui\\theme\\softhash\\list-contacts.tpl',
-      1 => 1602688371,
+      1 => 1467178244,
       2 => 'file',
     ),
   ),
@@ -15,8 +15,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5797ff4dd82af8_19768425',
   'variables' => 
   array (
     '_c' => 0,
@@ -30,6 +28,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'paginator' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5797ff4dd82af8_19768425',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5797ff4dd82af8_19768425')) {function content_5797ff4dd82af8_19768425($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
@@ -69,73 +69,81 @@ customers/list/">
 
                             </div>
                         </form>
-                        
-                        <div class="table-wrapper">
-                            <table class="table table-bordered table-hover sys_table footable"  data-filter="#foo_filter" data-page-size="50">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Nombre</th>
-                                    <th>Empresa</th>
-                                    <th><?php echo $_smarty_tpl->tpl_vars['_L']->value['Email'];?>
+
+                        <table class="table table-bordered table-hover sys_table footable"  data-filter="#foo_filter" data-page-size="50">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th><?php echo $_smarty_tpl->tpl_vars['_L']->value['Name'];?>
 </th>
-                                    <th><?php echo $_smarty_tpl->tpl_vars['_L']->value['Phone'];?>
+                                <th><?php echo $_smarty_tpl->tpl_vars['_L']->value['Company Name'];?>
 </th>
-                                    <th class="text-right"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Manage'];?>
+                                <th><?php echo $_smarty_tpl->tpl_vars['_L']->value['Email'];?>
 </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-    
-                                <?php  $_smarty_tpl->tpl_vars['ds'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['ds']->_loop = false;
+                                <th><?php echo $_smarty_tpl->tpl_vars['_L']->value['Phone'];?>
+</th>
+                                <th class="text-right"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Manage'];?>
+</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <?php  $_smarty_tpl->tpl_vars['ds'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['ds']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['d']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['ds']->key => $_smarty_tpl->tpl_vars['ds']->value){
 $_smarty_tpl->tpl_vars['ds']->_loop = true;
 ?>
-    
-                                    <tr>
-    
-                                        <td><a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
+
+                                <tr>
+
+                                    <td><a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
 /"><?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
 </a> </td>
-    
-                                        <td><a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
+
+                                    <td><a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
 /"><?php echo $_smarty_tpl->tpl_vars['ds']->value['account'];?>
 </a> </td>
-                                        <td><?php echo $_smarty_tpl->tpl_vars['ds']->value['company'];?>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['ds']->value['company'];?>
 </td>
-    
-                                        <td>
-                                            <?php echo $_smarty_tpl->tpl_vars['ds']->value['email'];?>
 
-    
-                                        </td>
-                                        <td>
-                                            <?php echo $_smarty_tpl->tpl_vars['ds']->value['phone'];?>
+                                    <td>
+                                        <?php echo $_smarty_tpl->tpl_vars['ds']->value['email'];?>
 
-                                        </td>
-                                        <td class="text-right">
-                                            <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
+
+                                    </td>
+                                    <td>
+                                        <?php echo $_smarty_tpl->tpl_vars['ds']->value['phone'];?>
+
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-/" class="btn"><i class="fa fa-search-plus"></i></a>
-    
-                                            <a href="delete/crm-user/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-/" class="btn cdelete" id="uid<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-    
-                                <?php } ?>
-    
-                                </tbody>
-                            </table>
-                        </div>
-                        <div>
-                            <ul class="pagination">
-                            </ul>
-                        </div>
+/" class="btn btn-primary btn-xs"><i class="fa fa-search"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['View'];?>
+</a>
+
+                                        <a href="delete/crm-user/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
+/" class="btn btn-danger btn-xs cdelete" id="uid<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
+"><i class="fa fa-trash"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Delete'];?>
+</a>
+                                    </td>
+                                </tr>
+
+                            <?php } ?>
+
+                            </tbody>
+
+                            <tfoot>
+                            <tr>
+                                <td colspan="6">
+                                    <ul class="pagination">
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tfoot>
+
+                        </table>
 
                     </div>
                 </div>
@@ -181,29 +189,29 @@ contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
     <div class="row">
         <div class="col-md-12">
 
-            <div class="table-panel">
-                <div class="pb-md">
+            <div class="panel panel-default">
+                <div class="panel-body">
 
                     <form class="form-horizontal" method="post" action="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 customers/list/">
                         <div class="form-group">
-                            <div class="col-sm-7">
+                            <div class="col-md-8">
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <span class="fa fa-search"></span>
                                     </div>
                                     <input type="text" name="name" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['_L']->value['Search by Name'];?>
-"/>
+..."/>
                                     <div class="input-group-btn">
-                                        <button class="btn btn-success"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Search'];?>
+                                        <button class="btn btn-primary"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Search'];?>
 </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-5">
+                            <div class="col-md-4">
 
                                 <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
-contacts/add/" class="btn btn-success"><i class="fa fa-plus"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Add Contact'];?>
+contacts/add/" class="btn btn-success btn-block"><i class="fa fa-plus"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Add New Contact'];?>
 </a>
 
                             </div>
@@ -215,11 +223,11 @@ contacts/add/" class="btn btn-success"><i class="fa fa-plus"></i> <?php echo $_s
         </div>
     </div>
 
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-md-12">
 
             <div class="panel panel-default">
-                <div class="p-md">
+                <div class="panel-body">
                     <h3><?php echo $_smarty_tpl->tpl_vars['_L']->value['Filter by Tags'];?>
 </h3>
                     <ul class="tag-list" style="padding: 0">
@@ -238,7 +246,7 @@ contacts/list/<?php echo $_smarty_tpl->tpl_vars['ts']->value['text'];?>
             </div>
 
         </div>
-    </div> -->
+    </div>
 
     <div class="row">
 
@@ -247,7 +255,7 @@ contacts/list/<?php echo $_smarty_tpl->tpl_vars['ts']->value['text'];?>
             <div class="col-md-12">
 
                 <div class="panel panel-default">
-                    <div class="table-wrapper">
+                    <div class="panel-body">
                         <table class="table table-bordered table-hover sys_table">
                             <thead>
                             <tr>
@@ -298,11 +306,13 @@ contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
                                     <td class="text-right">
                                         <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-/" class="btn"><i class="fa fa-search-plus"></i></a>
+/" class="btn btn-primary btn-xs"><i class="fa fa-search"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['View'];?>
+</a>
 
                                         <a href="delete/crm-user/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-/" class="btn cdelete" id="uid<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-"><i class="fa fa-trash"></i></a>
+/" class="btn btn-danger btn-xs cdelete" id="uid<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
+"><i class="fa fa-trash"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Delete'];?>
+</a>
                                     </td>
                                 </tr>
 
@@ -323,10 +333,10 @@ contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
 foreach ($_from as $_smarty_tpl->tpl_vars['ds']->key => $_smarty_tpl->tpl_vars['ds']->value){
 $_smarty_tpl->tpl_vars['ds']->_loop = true;
 ?>
-                <div class="col-md-4 col-sm-6 sdiv">
+                <div class="col-md-3 sdiv">
                     <!-- CONTACT ITEM -->
                     <div class="panel panel-default">
-                        <div class="profile">
+                        <div class="panel-body profile">
                             <div class="profile-image">
                                 <?php if ($_smarty_tpl->tpl_vars['ds']->value['img']=='gravatar'){?>
                                     <img src="http://www.gravatar.com/avatar/<?php echo md5(($_smarty_tpl->tpl_vars['ds']->value['email']));?>
@@ -355,7 +365,7 @@ sysfrm/uploads/system/profile-icon.png" class="img-thumbnail img-responsive" alt
                         <div class="panel-body">
                             <div class="contact-info">
 
-                                <p class="text-center"><small><?php echo $_smarty_tpl->tpl_vars['_L']->value['Email'];?>
+                                <p><small><?php echo $_smarty_tpl->tpl_vars['_L']->value['Email'];?>
 </small><br/><?php if ($_smarty_tpl->tpl_vars['ds']->value['email']!=''){?><?php echo $_smarty_tpl->tpl_vars['ds']->value['email'];?>
  <?php }else{ ?> <?php echo $_smarty_tpl->tpl_vars['_L']->value['n_a'];?>
  <?php }?></p>
@@ -363,12 +373,12 @@ sysfrm/uploads/system/profile-icon.png" class="img-thumbnail img-responsive" alt
                                 <p>
                                     <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 contacts/view/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-/" class="btn btn-primary"><?php echo $_smarty_tpl->tpl_vars['_L']->value['View'];?>
+/" class="btn btn-primary btn-xs"><i class="fa fa-search"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['View'];?>
 </a>
 
                                     <a href="delete/crm-user/<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-/" class="btn btn-danger cdelete" id="uid<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Delete'];?>
+/" class="btn btn-danger btn-xs cdelete" id="uid<?php echo $_smarty_tpl->tpl_vars['ds']->value['id'];?>
+"><i class="fa fa-trash"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Delete'];?>
 </a>
                                 </p>
                             </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 11:34:36
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 12:22:26
          compiled from "ui\theme\softhash\client-iview.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1001357980947cb51f8-79219206%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4733379797183ae723fcd35fe98af24cce2c87f6' => 
     array (
       0 => 'ui\\theme\\softhash\\client-iview.tpl',
-      1 => 1602688371,
+      1 => 1602696144,
       2 => 'file',
     ),
   ),
@@ -460,11 +460,7 @@ $_smarty_tpl->tpl_vars['tr']->_loop = true;
             <div class="text-right">
 
                  <br>
-                <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
-client/ipdf/<?php echo $_smarty_tpl->tpl_vars['d']->value['id'];?>
-/token_<?php echo $_smarty_tpl->tpl_vars['d']->value['vtoken'];?>
-" class="btn btn-primary ml-sm"><i class="fa fa-print"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Download PDF'];?>
-</a>
+                
                 <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
 iview/print/<?php echo $_smarty_tpl->tpl_vars['d']->value['id'];?>
 /token_<?php echo $_smarty_tpl->tpl_vars['d']->value['vtoken'];?>

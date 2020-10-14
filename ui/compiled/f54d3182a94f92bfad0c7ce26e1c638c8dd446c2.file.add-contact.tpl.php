@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2016-07-26 20:18:19
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 12:17:05
          compiled from "ui\theme\softhash\add-contact.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:275545797fdcbd76076-07417812%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f54d3182a94f92bfad0c7ce26e1c638c8dd446c2' => 
     array (
       0 => 'ui\\theme\\softhash\\add-contact.tpl',
-      1 => 1468722742,
+      1 => 1602688371,
       2 => 'file',
     ),
   ),
@@ -15,27 +15,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5797fdcc664266_55754372',
   'variables' => 
   array (
     '_L' => 0,
     '_url' => 0,
-    'countries' => 0,
     'fs' => 0,
     'f' => 0,
     'fo' => 0,
     'tags' => 0,
     'tag' => 0,
+    'countries' => 0,
     'gs' => 0,
     'g' => 0,
     'g_selected_id' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5797fdcc664266_55754372',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5797fdcc664266_55754372')) {function content_5797fdcc664266_55754372($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-<div class="wrapper wrapper-content">
+
 <div class="row">
 
     <div class="col-md-12">
@@ -48,7 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </h5>
 
                 <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
-contacts/import_csv/" class="btn btn-xs btn-primary btn-rounded pull-right"><i class="fa fa-bars"></i> Import Contacts</a>
+contacts/import_csv/" class="btn btn-xs btn-primary btn-rounded pull-right"><i class="fa fa-upload"></i> Importar</a>
 
             </div>
             <div class="ibox-content" id="ibox_form">
@@ -60,77 +60,50 @@ contacts/import_csv/" class="btn btn-xs btn-primary btn-rounded pull-right"><i c
 
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <div class="form-group"><label class="col-md-4 control-label" for="account"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Full Name'];?>
+                            <div class="form-group"><label class="control-label" for="account"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Full Name'];?>
 *</label>
 
-                                <div class="col-lg-8"><input type="text" id="account" name="account" class="form-control">
+                                <div ><input type="text" id="account" name="account" class="form-control">
 
                                 </div>
                             </div>
 
-                            <div class="form-group"><label class="col-md-4 control-label" for="company"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Company Name'];?>
+                            <div class="form-group"><label class="control-label" for="email"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Email'];?>
 </label>
 
-                                <div class="col-lg-8"><input type="text" id="company" name="company" class="form-control">
+                                <div ><input type="text" id="email" name="email" class="form-control">
 
                                 </div>
                             </div>
 
-                            <div class="form-group"><label class="col-md-4 control-label" for="email"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Email'];?>
+                            <div class="form-group"><label class="control-label" for="password"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Password'];?>
 </label>
 
-                                <div class="col-lg-8"><input type="text" id="email" name="email" class="form-control">
+                                <div ><input type="password" id="password" name="password" class="form-control" autocomplete="new-password">
 
                                 </div>
                             </div>
-                            <div class="form-group"><label class="col-md-4 control-label" for="phone"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Phone'];?>
+
+                            <div class="form-group"><label class="control-label" for="address"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Address'];?>
 </label>
 
-                                <div class="col-lg-8"><input type="text" id="phone" name="phone" class="form-control">
+                                <div ><input type="text" id="address" name="address" class="form-control">
 
                                 </div>
                             </div>
-                            <div class="form-group"><label class="col-md-4 control-label" for="address"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Address'];?>
+
+                            <div class="form-group"><label class="control-label" for="state"><?php echo $_smarty_tpl->tpl_vars['_L']->value['State Region'];?>
 </label>
 
-                                <div class="col-lg-8"><input type="text" id="address" name="address" class="form-control">
+                                <div ><input type="text" id="state" name="state" class="form-control">
 
                                 </div>
                             </div>
-
-
-                            <div class="form-group"><label class="col-md-4 control-label" for="city"><?php echo $_smarty_tpl->tpl_vars['_L']->value['City'];?>
-</label>
-
-                                <div class="col-lg-8"><input type="text" id="city" name="city" class="form-control">
-
-                                </div>
-                            </div>
-                            <div class="form-group"><label class="col-md-4 control-label" for="state"><?php echo $_smarty_tpl->tpl_vars['_L']->value['State Region'];?>
-</label>
-
-                                <div class="col-lg-8"><input type="text" id="state" name="state" class="form-control">
-
-                                </div>
-                            </div>
-                            <div class="form-group"><label class="col-md-4 control-label" for="zip"><?php echo $_smarty_tpl->tpl_vars['_L']->value['ZIP Postal Code'];?>
+                            
+                            <div class="form-group"><label class="control-label" for="zip"><?php echo $_smarty_tpl->tpl_vars['_L']->value['ZIP Postal Code'];?>
  </label>
 
-                                <div class="col-lg-8"><input type="text" id="zip" name="zip" class="form-control">
-
-                                </div>
-                            </div>
-                            <div class="form-group"><label class="col-md-4 control-label" for="country"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Country'];?>
-</label>
-
-                                <div class="col-lg-8">
-
-                                    <select name="country" id="country" class="form-control">
-                                        <option value=""><?php echo $_smarty_tpl->tpl_vars['_L']->value['Select Country'];?>
-</option>
-                                        <?php echo $_smarty_tpl->tpl_vars['countries']->value;?>
-
-                                    </select>
+                                <div ><input type="text" id="zip" name="zip" class="form-control">
 
                                 </div>
                             </div>
@@ -142,13 +115,13 @@ contacts/import_csv/" class="btn btn-xs btn-primary btn-rounded pull-right"><i c
 foreach ($_from as $_smarty_tpl->tpl_vars['f']->key => $_smarty_tpl->tpl_vars['f']->value){
 $_smarty_tpl->tpl_vars['f']->_loop = true;
 ?>
-                                <div class="form-group"><label class="col-md-4 control-label" for="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
+                                <div class="form-group"><label class="control-label" for="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['f']->value['fieldname'];?>
 </label>
                                     <?php if (($_smarty_tpl->tpl_vars['f']->value['fieldtype'])=='text'){?>
 
 
-                                        <div class="col-lg-8">
+                                        <div >
                                             <input type="text" id="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " name="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " class="form-control">
@@ -161,7 +134,7 @@ $_smarty_tpl->tpl_vars['f']->_loop = true;
 
                                     <?php }elseif(($_smarty_tpl->tpl_vars['f']->value['fieldtype'])=='password'){?>
 
-                                        <div class="col-lg-8">
+                                        <div >
                                             <input type="password" id="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " name="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " class="form-control">
@@ -172,7 +145,7 @@ $_smarty_tpl->tpl_vars['f']->_loop = true;
                                         </div>
 
                                     <?php }elseif(($_smarty_tpl->tpl_vars['f']->value['fieldtype'])=='dropdown'){?>
-                                        <div class="col-lg-8">
+                                        <div >
                                             <select id="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " name="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " class="form-control">
@@ -195,7 +168,7 @@ $_smarty_tpl->tpl_vars['fo']->_loop = true;
 
                                     <?php }elseif(($_smarty_tpl->tpl_vars['f']->value['fieldtype'])=='textarea'){?>
 
-                                        <div class="col-lg-8">
+                                        <div >
                                             <textarea id="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " name="cf<?php echo $_smarty_tpl->tpl_vars['f']->value['id'];?>
 " class="form-control" rows="3"></textarea>
@@ -210,10 +183,10 @@ $_smarty_tpl->tpl_vars['fo']->_loop = true;
                                 </div>
                             <?php } ?>
 
-                            <div class="form-group"><label class="col-md-4 control-label" for="tags"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Tags'];?>
+                            <div class="form-group"><label class="control-label" for="tags"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Tags'];?>
 </label>
 
-                                <div class="col-lg-8">
+                                <div >
                                     
                                     <select name="tags[]" id="tags" class="form-control" multiple="multiple">
                                         <?php  $_smarty_tpl->tpl_vars['tag'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['tag']->_loop = false;
@@ -232,10 +205,58 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
                         </div>
                         <div class="col-md-6 col-sm-12">
 
-                            <div class="form-group"><label class="col-md-4 control-label" for="group"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Group'];?>
+                            
+                            <div class="form-group"><label class="control-label" for="company"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Company Name'];?>
 </label>
 
-                                <div class="col-lg-8">
+                                <div ><input type="text" id="company" name="company" class="form-control">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group"><label class="control-label" for="phone"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Phone'];?>
+</label>
+
+                                <div ><input type="text" id="phone" name="phone" class="form-control">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group"><label class="control-label" for="cpassword"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Confirm Password'];?>
+</label>
+
+                                <div ><input type="password" id="cpassword" name="cpassword" class="form-control" autocomplete="new-password">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group"><label class="control-label" for="city"><?php echo $_smarty_tpl->tpl_vars['_L']->value['City'];?>
+</label>
+
+                                <div ><input type="text" id="city" name="city" class="form-control">
+
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group"><label class="control-label" for="country"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Country'];?>
+</label>
+
+                                <div >
+
+                                    <select name="country" id="country" class="form-control">
+                                        <option value=""><?php echo $_smarty_tpl->tpl_vars['_L']->value['Select Country'];?>
+</option>
+                                        <?php echo $_smarty_tpl->tpl_vars['countries']->value;?>
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group"><label class="control-label" for="group">Grupo</label>
+                                <span class="help-block"><a href="#" id="add_new_group"><i class="fa fa-plus"></i> Añadir Grupo</a> </span>
+                                <div>
                                     <select class="form-control" name="group" id="group">
                                         <option value="0"><?php echo $_smarty_tpl->tpl_vars['_L']->value['None'];?>
 </option>
@@ -249,30 +270,20 @@ $_smarty_tpl->tpl_vars['g']->_loop = true;
 </option>
                                         <?php } ?>
                                     </select>
-                                    <span class="help-block"><a href="#" id="add_new_group"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Add New Group'];?>
-</a> </span>
                                 </div>
                             </div>
 
 
-                            <div class="form-group"><label class="col-md-4 control-label" for="password"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Password'];?>
+                            <!-- <div class="form-group"><label class="control-label" for="password"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Password'];?>
 </label>
 
-                                <div class="col-lg-8"><input type="password" id="password" name="password" class="form-control">
+                                <div ><input type="password" id="password" name="password" class="form-control" autocomplete="new-password">
 
                                 </div>
-                            </div>
-
-                            <div class="form-group"><label class="col-md-4 control-label" for="cpassword"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Confirm Password'];?>
-</label>
-
-                                <div class="col-lg-8"><input type="password" id="cpassword" name="cpassword" class="form-control">
-
-                                </div>
-                            </div>
+                            </div> -->
 
 
-                            <div class="form-group"><label class="col-md-4 control-label" for="send_client_signup_email"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Welcome Email'];?>
+                            <!-- <div class="form-group"><label class="col-md-4 control-label" for="send_client_signup_email"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Welcome Email'];?>
 </label>
 
                                 <div class="col-lg-8">
@@ -283,7 +294,7 @@ $_smarty_tpl->tpl_vars['g']->_loop = true;
 </span>
 
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
@@ -294,11 +305,8 @@ $_smarty_tpl->tpl_vars['g']->_loop = true;
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <div class="col-md-offset-2 col-lg-10">
-                                    <button class="md-btn md-btn-primary" type="submit" id="submit"><i class="fa fa-check"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Save'];?>
-</button> | <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
-contacts/list/">Or Cancel</a>
-                                </div>
+                                    <button class="md-btn md-btn-primary" type="submit" id="submit"> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Save'];?>
+</button>
                             </div>
                         </div>
                     </div>
@@ -311,12 +319,10 @@ contacts/list/">Or Cancel</a>
 </div>
 
 
-</div>
 
-<input type="hidden" name="_msg_add_new_group" id="_msg_add_new_group" value="<?php echo $_smarty_tpl->tpl_vars['_L']->value['Add New Group'];?>
-">
-<input type="hidden" name="_msg_group_name" id="_msg_group_name" value="<?php echo $_smarty_tpl->tpl_vars['_L']->value['Group Name'];?>
-">
+
+<input type="hidden" name="_msg_add_new_group" id="_msg_add_new_group" value="Añadir Nuevo Grupo">
+<input type="hidden" name="_msg_group_name" id="_msg_group_name" value="Nombre del Grupo">
 
 <?php echo $_smarty_tpl->getSubTemplate ("sections/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 <?php }} ?>

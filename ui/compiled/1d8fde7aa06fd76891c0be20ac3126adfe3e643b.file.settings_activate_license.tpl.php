@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2016-07-26 20:14:37
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 12:17:07
          compiled from "ui\theme\softhash\settings_activate_license.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:90455797fced511492-90596370%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d8fde7aa06fd76891c0be20ac3126adfe3e643b' => 
     array (
       0 => 'ui\\theme\\softhash\\settings_activate_license.tpl',
-      1 => 1469221452,
+      1 => 1602688371,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5797fced65a799_64586770',
   'variables' => 
   array (
     '_url' => 0,
     '_L' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5797fced65a799_64586770',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5797fced65a799_64586770')) {function content_5797fced65a799_64586770($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 

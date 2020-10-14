@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 11:34:34
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 12:55:47
          compiled from "ui\theme\softhash\invoice-view.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:133005798016cedaf91-40483380%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a451d1b1a214b55b9630a3a61e36819b30b0e49c' => 
     array (
       0 => 'ui\\theme\\softhash\\invoice-view.tpl',
-      1 => 1602688371,
+      1 => 1602698146,
       2 => 'file',
     ),
   ),
@@ -69,25 +69,7 @@ client/iview/<?php echo $_smarty_tpl->tpl_vars['d']->value['id'];?>
 
 
                     <div class="btn-dd">
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn  btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>  <?php echo $_smarty_tpl->tpl_vars['_L']->value['Send Email'];?>
-
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#" id="mail_invoice_created"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Invoice Created'];?>
-</a></li>
-                                <li><a href="#" id="mail_invoice_reminder"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Invoice Payment Reminder'];?>
-</a></li>
-                                <li><a href="#" id="mail_invoice_overdue"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Invoice Overdue Notice'];?>
-</a></li>
-                                <li><a href="#" id="mail_invoice_confirm"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Invoice Payment Confirmation'];?>
-</a></li>
-                                <li><a href="#" id="mail_invoice_refund"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Invoice Refund Confirmation'];?>
-</a></li>
-                            </ul>
-                        </div>
+                        
     
                         <div class="btn-group" role="group">
                             <button type="button" class="btn  btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">

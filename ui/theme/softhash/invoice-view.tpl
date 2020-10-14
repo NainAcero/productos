@@ -17,19 +17,7 @@
 
 
                     <div class="btn-dd">
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn  btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>  {$_L['Send Email']}
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#" id="mail_invoice_created">{$_L['Invoice Created']}</a></li>
-                                <li><a href="#" id="mail_invoice_reminder">{$_L['Invoice Payment Reminder']}</a></li>
-                                <li><a href="#" id="mail_invoice_overdue">{$_L['Invoice Overdue Notice']}</a></li>
-                                <li><a href="#" id="mail_invoice_confirm">{$_L['Invoice Payment Confirmation']}</a></li>
-                                <li><a href="#" id="mail_invoice_refund">{$_L['Invoice Refund Confirmation']}</a></li>
-                            </ul>
-                        </div>
+                        
     
                         <div class="btn-group" role="group">
                             <button type="button" class="btn  btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">

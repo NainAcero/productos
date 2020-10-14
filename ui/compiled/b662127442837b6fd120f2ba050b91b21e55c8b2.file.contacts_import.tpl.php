@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2016-07-26 20:13:01
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-14 12:17:18
          compiled from "ui\theme\softhash\contacts_import.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1015957980a9dd10b92-69878123%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b662127442837b6fd120f2ba050b91b21e55c8b2' => 
     array (
       0 => 'ui\\theme\\softhash\\contacts_import.tpl',
-      1 => 1468802068,
+      1 => 1602688371,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_57980a9e028286_67228949',
   'variables' => 
   array (
     '_url' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'app_url' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_57980a9e028286_67228949',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57980a9e028286_67228949')) {function content_57980a9e028286_67228949($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
@@ -33,11 +33,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         <div class="pull-right">
             <a href="<?php echo $_smarty_tpl->tpl_vars['_url']->value;?>
-contacts/list/" class="btn btn-xs btn-danger"><i class="fa fa-arrow-left"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Cancel'];?>
+contacts/list/" class="btn btn-xs btn-danger"><i class="fa fa-close"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Cancel'];?>
 </a>
              <a href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
-sysfrm/uploads/system/contacts.csv" class="btn btn-xs btn-primary"><i class="fa fa-download"></i> <?php echo $_smarty_tpl->tpl_vars['_L']->value['Download Sample File'];?>
-</a>
+sysfrm/uploads/system/contacts.csv" class="btn btn-xs btn-primary"><i class="fa fa-download"></i> Descargar archivo de ejemplo</a>
         </div>
 
     </div>
@@ -54,11 +53,9 @@ sysfrm/uploads/system/contacts.csv" class="btn btn-xs btn-primary"><i class="fa 
 contacts/csv_upload/" class="dropzone" id="upload_container">
 
                     <div class="dz-message">
-                        <h3> <i class="fa fa-cloud-upload"></i>  <?php echo $_smarty_tpl->tpl_vars['_L']->value['Drop CSV File Here'];?>
-</h3>
+                        <h3> <i class="fa fa-cloud-upload"></i>  Arrastra el archivo CSV aquí</h3>
                         <br />
-                        <span class="note"><?php echo $_smarty_tpl->tpl_vars['_L']->value['Or Click to Upload'];?>
-</span>
+                        <span class="note">O click para seleccionar el archivo</span>
                     </div>
 
                 </form>
